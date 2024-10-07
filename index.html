@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Tio Meio Rico - Cursos</title>
+    <style>
+        body {
+            background-color: #e9ecef;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 20px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .form-control {
+            border-radius: 5px;
+        }
+        .btn-primary {
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center; /* Centraliza verticalmente */
+            position: relative;
+        }
+
+        .header-img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px; /* Espaço entre a imagem e o texto */
+            border-radius: 10px;
+        }
+
+        .header-text {
+            display: flex;
+            flex-direction: column; /* Coloca o título e subtítulo em uma coluna */
+            text-align: left; /* Mantém o texto alinhado à esquerda */
+        }
+
+        header h1, header p {
+            margin: 0;
+        }
+
+
+        @media (max-width: 576px) {
+            .card {
+                width: 90%; /* Largura menor em telas pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="img.jpg" alt="Cursos Tio Meio Rico" class="header-img">
+    <div class="header-text">
+        <h1>Bem-vindo ao Tio Meio Rico!</h1>
+        <p>Transforme sua carreira com nossos cursos.</p>
+    </div>
+</header>
+
+<div class="container flex-grow-1 d-flex justify-content-center align-items-center">
+    <div class="card">
+        <div class="card-header text-center" style="background-color: #007bff; color: white;">
+            Inscreva-se agora!
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" class="form-control" id="sobrenome" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço completo</label>
+                    <input type="text" class="form-control" id="endereco" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="cep">CEP</label>
+                        <input type="text" class="form-control" id="cep" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" class="form-control" id="telefone" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" class="form-control" id="usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="form-control" id="senha" required>
+                </div>
+                <div class="form-group">
+                    <label for="curso">Curso</label>
+                    <select class="form-control" id="curso" required>
+                        <option>Análise e Desenvolvimento de Dados</option>
+                        <option>Marketing</option>
+                        <option>Tráfego Pago</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="estado">Estado</label>
+                        <input type="text" class="form-control" id="estado" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="pais">País</label>
+                        <input type="text" class="form-control" id="pais" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pagamento">Forma de pagamento</label>
+                    <select class="form-control" id="pagamento" required>
+                        <option>Cartão de Crédito</option>
+                        <option>Boleto</option>
+                        <option>Transferência</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="idade">Idade</label>
+                    <input type="number" class="form-control" id="idade" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Tio Meio Rico. Todos os direitos reservados.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
